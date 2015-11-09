@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contato</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+		   	<header class="row">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="index.html">
+						 	<img src="ufoptopo.png" class="img-responsive" id="logo" alt="Ufop">
+						</a>
+					</div>	
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  	<ul class="nav navbar-nav">
+						    <li><a href="cadastro.html">Cadastro</a></li>
+						    <li><a href="matricula.html">Matrícula</a></li>
+						    <li><a href="listaPresença.html">Lista de presença</a></li> 
+						    <li><a href="tabela.html">Tabela</a></li> 
+						    <li><a href="contato.html">Contato</a></li>  
+					  	</ul>
+					</div>
+
+					<ul class="breadcrumb" id="bread">
+				        <li><a href="index.html">Home</a></li>
+				        <li class="active">Contato</li>
+			        </ul>
+	    		</nav>
+		   	</header>
+		   
+		   	<div class="jumbotron"> 
+				<form class="form-horizontal" role="form" name="Contato" method="get" action="sucessoContato.html">
+					<legend>Contato:</legend>
+					<div class="row">
+    					<div class="col-md-4">
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="nome">Nome:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Seu nome">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="email">Email:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Digite seu email">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="site">Website:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Seu website">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="comentario">Comentário:</label>
+						        <div class="col-md-8">
+						            <textarea class="form-control" rows="5" id="comment" placeholder="Insira algum comentário"></textarea>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-6"></div>
+						    	<div class="col-md-6">
+								<input type="reset" class="btn btn-danger" value="Limpar">
+								<input type="submit" class="btn btn-success" value="Enviar">	
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		   
+		   	<div class="footer navbar-inverse navbar-fixed-bottom">
+		   		<footer class="row" id="footerRow">   
+		        	<div class="col-sm-6">
+		        		Universidade Federal de Ouro Preto
+		        	</div>
+
+		        	<div class="col-sm-6">
+		        		José Cassimiro Toledo Júnior - 12.1.8271 <br /> jjtoledo93@gmail.com
+		        	</div>
+		   		</footer>
+		   	</div>
+		</div>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>

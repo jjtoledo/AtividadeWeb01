@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<header class="row">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="index.html">
+						 	<img src="ufoptopo.png" class="img-responsive" id="logo" alt="Ufop">
+						</a>
+					</div>	
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  	<ul class="nav navbar-nav">
+						    <li><a href="cadastro.html">Cadastro</a></li>
+						    <li><a href="matricula.html">Matrícula</a></li>
+						    <li><a href="listaPresença.html">Lista de presença</a></li> 
+						    <li><a href="tabela.html">Tabela</a></li> 
+						    <li><a href="contato.html">Contato</a></li>  
+					  	</ul>
+					</div>
+					
+					<ul class="breadcrumb" id="bread">
+				        <li><a href="index.html">Home</a></li>
+				        <li class="active">Cadastro</li>
+			        </ul>
+	    		</nav>
+			</header>
+
+    		<div class="jumbotron"> 
+				<form class="form-horizontal" role="form" name="Cadastro" method="get" action="validar.html">
+					<legend>Cadastro de Usuário:</legend>
+					<div class="row">
+    					<div class="col-md-4">
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="matricula">Matrícula:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Digite sua matrícula">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="nome">Nome:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Digite seu nome">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="rua">Rua:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Rua">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="numero">Número:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Número">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="complemento">Complemento:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Complemento">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="cidade">Cidade/Estado:</label>
+						        <div class="col-md-8">
+						            <select class="form-control" id="cidade">
+						            	<option>Selecione a cidade</option>
+						            	<option>Belo Horizonte, MG</option>
+									    <option>João Monlevade, MG</option>
+									    <option>Rio de Janeiro, RJ</option>
+									    <option>São Paulo, SP</option>
+									    <option>Angra dos Reis, RJ</option>
+									    <option>Cabo Frio, RJ</option>
+									</select>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="sexo">Sexo:</label>
+						        <div class="col-md-8">
+						            <label class="radio-inline"><input type="radio" name="optradio">Masculino</label>
+									<label class="radio-inline"><input type="radio" name="optradio">Feminino</label>
+						        </div>
+						    </div>
+						</div>
+
+						<div class="col-md-4"> 
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="rg">RG:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="RG">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="cpf">CPF:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="CPF">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="tipo">Tipo Sanguíneo:</label>
+						        <div class="col-md-8">
+						            <select class="form-control" id="tipo">
+						            	<option>Selecione o tipo</option>
+						            	<option>O</option>
+									    <option>A</option>
+									    <option>B</option>
+									    <option>AB</option>
+									</select>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="rh">Fator RH:</label>
+						        <div class="col-md-8">
+						            <label class="radio-inline"><input type="radio" name="optradio">-</label>
+									<label class="radio-inline"><input type="radio" name="optradio">+</label>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="tel">Telefone:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Tel">
+						        </div>
+					    	</div>
+					    	<div class="form-group">
+						        <label class="col-md-4 control-label" for="cel">Celular:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Cel">
+						        </div>
+					    	</div>
+					    	<div class="form-group">
+						        <label class="col-md-4 control-label" for="email">Email:</label>
+						        <div class="col-md-8">
+						            <input type="text" class="form-control" placeholder="Email">
+						        </div>
+					    	</div>
+						</div>
+
+						<div class="col-md-4">
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="senha">Senha:</label>
+						        <div class="col-md-8">
+						            <input type="password" class="form-control" placeholder="Senha">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="conf">Confirmação:</label>
+						        <div class="col-md-8">
+						            <input type="password" class="form-control" placeholder="Confirmação">
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="col-md-4 control-label" for="acesso">Acesso:</label>
+						        <div class="col-md-8">
+						            <label class="checkbox-inline"><input type="checkbox" value="">Biblioteca</label>
+									<label class="checkbox-inline"><input type="checkbox" value="">Restaurante</label>
+						        </div>
+						        <div class="col-md-4"></div>
+						        <div class="col-md-8">
+						            <label class="checkbox-inline"><input type="checkbox" value="">Clube</label>
+									<label class="checkbox-inline"><input type="checkbox" value="">Campo</label>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-6"></div>
+						    	<div class="col-md-6">
+								<input type="reset" class="btn btn-danger" value="Limpar">
+								<input type="submit" class="btn btn-success" value="Cadastrar">	
+								</div>
+							</div>
+					    </div>
+					</div>
+					
+					<div class="row">
+						
+					</div>
+				</form>
+			</div>
+	    
+		   	<div class="footer navbar-inverse navbar-fixed-bottom">
+		   		<footer class="row" id="footerRow">   
+		        	<div class="col-sm-6">
+		        		Universidade Federal de Ouro Preto
+		        	</div>
+
+		        	<div class="col-sm-6">
+		        		José Cassimiro Toledo Júnior - 12.1.8271 <br /> jjtoledo93@gmail.com
+		        	</div>
+		   		</footer>
+		   	</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
